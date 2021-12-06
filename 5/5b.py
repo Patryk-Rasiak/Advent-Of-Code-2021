@@ -1,5 +1,4 @@
 def print_board(board):
-
     for line in board:
         for char in line:
             if char == 0:
@@ -11,8 +10,9 @@ def print_board(board):
 
 with open("advent/5/5b.txt") as f:
     data = f.readlines()
-
     data = [x.strip() for x in data]
+
+    # Initializing the board
     board = [[] for _ in range(1000)]
     for line in board:
         for _ in range(1000):
@@ -64,10 +64,8 @@ with open("advent/5/5b.txt") as f:
                     y1 += 1
 
 
-print_board(board)
-
+# Counting overlaps
 counter = 0
-
 for line in board:
     for char in line:
         if char > 1:
