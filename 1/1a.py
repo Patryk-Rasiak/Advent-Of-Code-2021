@@ -1,7 +1,7 @@
 import sys
 
 
-with open("advent/1/1.txt") as f:
+with open("advent/1/1a.txt") as f:
     data = f.readlines()
 
 

@@ -1,0 +1,4 @@
+
+    result = play()
+
+    print(result)
