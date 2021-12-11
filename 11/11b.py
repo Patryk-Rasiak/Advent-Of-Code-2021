@@ -24,7 +24,6 @@ with open("advent/11/11b.txt") as f:
             for row in range(len(data)):
                 for col in range(len(data[0])):
                     if data[row][col] > 9:
-                        flashes += 1
                         perm = product([-1, 0, 1], repeat=2)
                         for i, j in perm:
                             if not (i == 0 and j == 0) and data[row+i][col+j] != 0:
