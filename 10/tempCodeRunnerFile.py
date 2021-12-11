@@ -1,0 +1,1 @@
+print(data[k][i])
