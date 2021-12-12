@@ -16,17 +16,17 @@ def least_common_digit(data, index):
     return min(counts, key=counts.get)
 
 
-with open("advent/3/3a.txt") as f:
+with open("advent/03/3a.txt") as f:
     data = f.readlines()
     data = [line.strip() for line in data]
 
-    gamma_rate = ""
-    epsilon_rate = ""
+gamma_rate = ""
+epsilon_rate = ""
 
-    for i in range(len(data[0])):
-        most_common = most_common_digit(data, i)
-        least_common = least_common_digit(data, i)
-        gamma_rate += most_common
-        epsilon_rate += least_common
+for i in range(len(data[0])):
+    most_common = most_common_digit(data, i)
+    least_common = least_common_digit(data, i)
+    gamma_rate += most_common
+    epsilon_rate += least_common
 
-    print(int(gamma_rate, 2) * int(epsilon_rate, 2))
+print(int(gamma_rate, 2) * int(epsilon_rate, 2))
